@@ -2,10 +2,12 @@ package game2048;
 
 import java.util.Formatter;
 import java.util.Observable;
+import java.util.Queue;
+import java.util.Stack;
 
 
 /** The state of a game of 2048.
- *  @author Jiahan Lin
+ *  @author Johannes Lin
  */
 public class Model extends Observable {
     /** Current contents of the board. */
@@ -115,24 +117,48 @@ public class Model extends Observable {
         // changed local variable to true.
         Board b = this.board;
         int size = b.size();
+        b.startViewingFrom(side);
+        int nullCounter = 0;
+        boolean changedButNoScore = false;
+
+        // Remove all "NULL"s in front of the tilt to be moved
         for (int col = 0; col < size; col += 1) {
             for (int row = 0; row < size - 1; row += 1) {
                 for (int i = row + 1; i < size; i += 1) {
                     Tile nextTile = b.tile(col, i);
-                    if (b.tile(col, row).value() == nextTile.value()) {
-                        if (b.move(col, row, nextTile)) { // Judge if this move is a MERGE
-                            b.move(col, row, nextTile);
+                    if (b.tile(col, row) != null && nextTile != null) {
+                        if (b.tile(col, row).value() == nextTile.value()) {
+                            this.score += b.tile(col, row).value() * 2;
                             changed = true;
+                            if (b.move(col, row, nextTile)) { // Judge if this move is a MERGE
+                                changedButNoScore = true;
+                            }
                         }
                     }
                 }
             }
         }
 
-        // Calculate the score of the current board
-        for (int col = 0; col < size; col += 1) {
-            for (int row = 0; row < size; row += 1) {
-                this.score += b.tile(col, row).value();
+        // If there are NULLs in front of the current tile,
+        // then move the current one to the NULL tile in the near front
+        for (int col = size - 1; col >= 0; col -= 1) {
+            for (int row = size - 1; row >= 0; row -= 1) {
+                if (b.tile(col, row) != null) {
+                    // Find the last tile in the row which is NULL,
+                    // and put the current tile to that col COL, row ROW
+                    int pointer = row + 1;
+                    int marker = row;
+                    while (pointer < size) {
+                        if (b.tile(col, pointer) == null) {
+                            marker = pointer;
+                        }
+                        pointer += 1;
+                    }
+                    b.move(col, marker, b.tile(col, row));
+                    if (marker != row) {
+                        changed = true;
+                    }
+                }
             }
         }
 
@@ -140,6 +166,11 @@ public class Model extends Observable {
         if (changed) {
             setChanged();
         }
+
+        if (side != Side.NORTH) {
+            b.setViewingPerspective(Side.NORTH);
+        }
+
         return changed;
     }
 
@@ -234,7 +265,6 @@ public class Model extends Observable {
         }
         return true;
     }
-
 
     @Override
      /** Returns the model as a string, used for debugging. */

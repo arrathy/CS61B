@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1647bb1c-5ba6-47c9-bd78-7c05e59cc366" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game2048/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj0/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj0/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj0/game2048/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj0/game2048/Model.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qhVlahzdWmDrJToiuGTeuhpcAG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,14 +59,27 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="E:/intellij_workplace" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.TestMaxTileExists">
-    <configuration name="TestAtLeastOneMoveExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game2048.Main" />
+      <module name="proj0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -40,13 +88,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestAtLeastOneMoveExists" />
+      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAtLeastOneMoveExists.testLeftOrRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestModel.testLeftNoMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -55,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestAtLeastOneMoveExists" />
-      <option name="METHOD_NAME" value="testLeftOrRight" />
+      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
+      <option name="METHOD_NAME" value="testLeftNoMerge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMaxTileExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestModel.testLeftNonAdjacentNoMerge1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -71,29 +119,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestMaxTileExists" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMaxTileExists.testMultipleMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game2048.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestMaxTileExists" />
-      <option name="METHOD_NAME" value="testMultipleMax" />
+      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
+      <option name="METHOD_NAME" value="testLeftNonAdjacentNoMerge1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMaxTileExists.testTopLeftCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestModel.testTripleMerge1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +135,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestMaxTileExists" />
-      <option name="METHOD_NAME" value="testTopLeftCorner" />
+      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
+      <option name="METHOD_NAME" value="testTripleMerge1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestMaxTileExists" />
-        <item itemvalue="JUnit.TestMaxTileExists.testMultipleMax" />
-        <item itemvalue="JUnit.TestAtLeastOneMoveExists.testLeftOrRight" />
-        <item itemvalue="JUnit.TestMaxTileExists.testTopLeftCorner" />
-        <item itemvalue="JUnit.TestAtLeastOneMoveExists" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestModel" />
+        <item itemvalue="JUnit.TestModel.testTripleMerge1" />
+        <item itemvalue="JUnit.TestModel.testLeftNonAdjacentNoMerge1" />
+        <item itemvalue="JUnit.TestModel.testLeftNoMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -137,122 +170,144 @@
       <workItem from="1617596652153" duration="4543000" />
       <workItem from="1617603613043" duration="469000" />
       <workItem from="1617604093792" duration="926000" />
-      <workItem from="1617615803662" duration="2377000" />
+      <workItem from="1617615803662" duration="12570000" />
+      <workItem from="1617631275903" duration="3084000" />
+      <workItem from="1617638487768" duration="1247000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1206" y="367" key="#Custom_Plugin_Repositories" timestamp="1617603565463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1206" y="367" key="#Custom_Plugin_Repositories/0.0.1920.1040@0.0.1920.1040" timestamp="1617603565463" />
+    <state x="842" y="382" width="480" height="276" key="#Notifications" timestamp="1617629008684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="842" y="382" width="480" height="276" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1617629008684" />
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1617603275999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617603275999" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617616361679">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617639735029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617616361679" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom" timestamp="1617605024718">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617639735029" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617621073713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617621073713" />
+    <state width="1877" height="759" key="GridCell.Tab.0.bottom" timestamp="1617639676587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center" timestamp="1617605024718">
+    <state width="1877" height="759" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617639676587" />
+    <state width="1877" height="759" key="GridCell.Tab.0.center" timestamp="1617639676587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left" timestamp="1617605024718">
+    <state width="1877" height="759" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617639676587" />
+    <state width="1877" height="759" key="GridCell.Tab.0.left" timestamp="1617639676587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right" timestamp="1617605024718">
+    <state width="1877" height="759" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617639676587" />
+    <state width="1877" height="759" key="GridCell.Tab.0.right" timestamp="1617639676587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.1.bottom" timestamp="1617605024718">
+    <state width="1877" height="759" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617639676587" />
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.bottom.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.1.center" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.1.center" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.center.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.1.left" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.1.left" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.left.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.1.right" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.1.right" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.right.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.2.bottom" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.2.bottom" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.bottom.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.2.center" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.2.center" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.center.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.2.left" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.2.left" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.left.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
-    <state width="1877" height="306" key="GridCell.Tab.2.right" timestamp="1617605024718">
+    <state width="1877" height="306" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
+    <state width="1877" height="306" key="GridCell.Tab.2.right" timestamp="1617638995254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.right.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617605024718" />
+    <state width="1877" height="306" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617638995254" />
     <state x="67" y="254" key="IDE.errors.dialog" timestamp="1617603085767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,6 +316,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="835" y="116" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617603578891" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1617630905031">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1617630905031" />
     <state x="690" y="279" key="extract.method.dialog" timestamp="1617550234854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,6 +332,14 @@
           <url>file://$PROJECT_DIR$/game2048/TestEmptySpace.java</url>
           <line>138</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/game2048/TestModel.java</url>
+          <line>453</line>
+          <properties class="game2048.TestModel" method="testRightAdjacentMerge">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
