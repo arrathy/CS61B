@@ -26,12 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1647bb1c-5ba6-47c9-bd78-7c05e59cc366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game2048/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game2048/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj0/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj0/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proj0/game2048/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj0/game2048/Model.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,20 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.TestModel.testUpAdjacentNoMerge">
+  <component name="RunManager" selected="JUnit.TestModel.testTripleMerge2">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game2048.Main" />
+      <module name="proj0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
@@ -82,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestModel.testSingleMergeSouth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestModel.testLeftNonAdjacentNoMerge1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -92,13 +101,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
       <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
-      <option name="METHOD_NAME" value="testSingleMergeSouth" />
+      <option name="METHOD_NAME" value="testLeftNonAdjacentNoMerge1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestModel.testSingleMergeUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestModel.testTripleMerge1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj0" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="game2048" />
       <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
-      <option name="METHOD_NAME" value="testSingleMergeUp" />
+      <option name="METHOD_NAME" value="testTripleMerge1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestModel.testUpAdjacentNoMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game2048.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
-      <option name="METHOD_NAME" value="testUpAdjacentNoMerge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestModel.testUpAdjacentNoMerge" />
-        <item itemvalue="JUnit.TestModel.testSingleMergeSouth" />
-        <item itemvalue="JUnit.TestModel" />
-        <item itemvalue="JUnit.TestModel.testSingleMergeUp" />
         <item itemvalue="JUnit.TestModel.testTripleMerge2" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestModel" />
+        <item itemvalue="JUnit.TestModel.testTripleMerge1" />
+        <item itemvalue="JUnit.TestModel.testLeftNonAdjacentNoMerge1" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +169,8 @@
       <workItem from="1617604093792" duration="926000" />
       <workItem from="1617615803662" duration="12570000" />
       <workItem from="1617631275903" duration="3084000" />
+      <workItem from="1617638487768" duration="1338000" />
+      <workItem from="1617707418289" duration="195000" />
     </task>
     <servers />
   </component>
@@ -207,110 +202,110 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617603275999" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617627683513">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617639735029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617627683513" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617639735029" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617621073713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617621073713" />
-    <state width="1877" height="306" key="GridCell.Tab.0.bottom" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.0.bottom" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.0.center" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.0.center" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.0.left" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.0.left" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.0.right" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.0.right" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.1.bottom" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.bottom.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.1.center" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.1.center" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.center.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.1.left" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.1.left" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.left.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.1.right" timestamp="1617638459264">
+    <state width="1877" height="306" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.1.right" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.right.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.1.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459264" />
-    <state width="1877" height="306" key="GridCell.Tab.2.bottom" timestamp="1617638459265">
+    <state width="1877" height="306" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.2.bottom" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.bottom.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459265" />
-    <state width="1877" height="306" key="GridCell.Tab.2.center" timestamp="1617638459265">
+    <state width="1877" height="306" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.2.center" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.center.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459265" />
-    <state width="1877" height="306" key="GridCell.Tab.2.left" timestamp="1617638459265">
+    <state width="1877" height="306" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.2.left" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.left.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459265" />
-    <state width="1877" height="306" key="GridCell.Tab.2.right" timestamp="1617638459265">
+    <state width="1877" height="306" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
+    <state width="1877" height="306" key="GridCell.Tab.2.right" timestamp="1617639834696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.right.inPresentationMode" timestamp="1617598231799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.2.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1617598231799" />
-    <state width="1877" height="306" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617638459265" />
+    <state width="1877" height="306" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617639834696" />
     <state x="67" y="254" key="IDE.errors.dialog" timestamp="1617603085767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -335,11 +330,6 @@
           <url>file://$PROJECT_DIR$/game2048/TestEmptySpace.java</url>
           <line>138</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/game2048/Model.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/game2048/TestModel.java</url>

@@ -113,25 +113,27 @@ public class Model extends Observable {
         changed = false;
 
         // TODO: Modify this.board (and perhaps this.score) to account
+        // Finished
         // for the tilt to the Side SIDE. If the board changed, set the
         // changed local variable to true.
         Board b = this.board;
         int size = b.size();
         b.startViewingFrom(side);
-        int nullCounter = 0;
-        boolean changedButNoScore = false;
-
-        // Remove all "NULL"s in front of the tilt to be moved
-        for (int col = 0; col < size; col += 1) {
-            for (int row = 0; row < size - 1; row += 1) {
-                for (int i = row + 1; i < size; i += 1) {
+        int tmpRow = -1, tmpCol = -1;
+        for (int col = size - 1; col >= 0; col -= 1) {
+            for (int row = size - 1; row >= 0; row -= 1) {
+                for (int i = row - 1; i >= 0; i -= 1) {
                     Tile nextTile = b.tile(col, i);
                     if (b.tile(col, row) != null && nextTile != null) {
                         if (b.tile(col, row).value() == nextTile.value()) {
-                            this.score += b.tile(col, row).value() * 2;
-                            changed = true;
-                            if (b.move(col, row, nextTile)) { // Judge if this move is a MERGE
-                                changedButNoScore = true;
+                            if (col != tmpCol || row != tmpRow) {
+                                this.score += b.tile(col, row).value() * 2;
+                                changed = true;
+                                if (b.move(col, row, nextTile)) { // Judge if this move is a MERGE
+                                    tmpRow = row;
+                                    row -= 1;
+                                    break;
+                                }
                             }
                         }
                     }
@@ -267,7 +269,7 @@ public class Model extends Observable {
     }
 
     @Override
-     /** Returns the model as a string, used for debugging. */
+    /** Returns the model as a string, used for debugging. */
     public String toString() {
         Formatter out = new Formatter();
         out.format("%n[%n");
