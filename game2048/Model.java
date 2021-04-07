@@ -125,14 +125,18 @@ public class Model extends Observable {
                 for (int i = row - 1; i >= 0; i -= 1) {
                     Tile nextTile = b.tile(col, i);
                     if (b.tile(col, row) != null && nextTile != null) {
-                        if (b.tile(col, row).value() == nextTile.value()) {
-                            if (col != tmpCol || row != tmpRow) {
-                                this.score += b.tile(col, row).value() * 2;
-                                changed = true;
-                                if (b.move(col, row, nextTile)) { // Judge if this move is a MERGE
-                                    tmpRow = row;
-                                    row -= 1;
-                                    break;
+                        if (b.tile(col, row).value() == nextTile.value()) { // Only if there are NULLs or nothing between these tiles
+                            Tile currentTile = b.tile(col, row);
+                            Tile nextCurrentTile = nextTile;
+                            if (checkNullsOrNothing(b, side, b.tile(col, row), nextTile)) {
+                                if (col != tmpCol || row != tmpRow) {
+                                    this.score += b.tile(col, row).value() * 2;
+                                    changed = true;
+                                    if (b.move(col, row, nextTile)) { // Judge if this move is a MERGE
+                                        tmpRow = row;
+                                        row -= 1;
+                                        break;
+                                    }
                                 }
                             }
                         }
@@ -174,6 +178,52 @@ public class Model extends Observable {
         }
 
         return changed;
+    }
+
+    /** Check if there are NULLs or nothing between these tiles*/
+    private boolean checkNullsOrNothing(Board b, Side side, Tile tile, Tile nextTile) {
+        b.startViewingFrom(Side.NORTH);
+        int tileCol = tile.col();
+        int nextTileCol = nextTile.col();
+        int tileRow = tile.row();
+        int nextTileRow = nextTile.row();
+        if (tileRow - nextTileRow > 1) {
+            for (int i = tileRow - 1; i > nextTileRow; i -= 1) {
+                Tile tmp = b.tile(tileCol, i);
+                if (b.tile(tileCol, i) != null) {
+                    b.setViewingPerspective(side);
+                    return false;
+                }
+            }
+        } else if (nextTileRow - tileRow > 1) {
+            for (int i = nextTileRow - 1; i > tileRow; i -= 1) {
+                Tile tmp = b.tile(tileCol, i);
+                if (b.tile(tileCol, i) != null) {
+                    b.setViewingPerspective(side);
+                    return false;
+                }
+            }
+        }
+        if (tileCol - nextTileCol > 1) {
+            for (int i = tileCol - 1; i > nextTileCol; i -= 1) {
+//                Tile tmp = b.tile(0, 2);
+                if (b.tile(i, tileRow) != null) {
+//                if (tmp != null) {
+                    b.setViewingPerspective(side);
+                    return false;
+                }
+            }
+        } else if (nextTileCol - tileCol > 1) {
+            for (int i = nextTileCol - 1; i > tileCol; i -= 1) {
+                Tile tmp = b.tile(i, tileRow);
+                if (b.tile(i, tileRow) != null) {
+                    b.setViewingPerspective(side);
+                    return false;
+                }
+            }
+        }
+        b.setViewingPerspective(side);
+        return true;
     }
 
     /** Checks if the game is over and sets the gameOver variable
